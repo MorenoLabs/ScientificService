@@ -5,32 +5,34 @@ plugins: [jekyll-paginate]
 excerpt_separator: <!--more-->
 categories: "quant|finance|maths|physics|crypto|programming|machine-learning"
 
+theme: minima
+
 
 # Permalinks
 permalink:        /:year/:month/:day/:title/
 
 # Setup
-title:            Reasonable Deviations
-tagline:          'a rational approach to complexity'
-description:      'a rational approach to complexity'
+title:            Scientific Operations
+tagline:          'a scientifc approach to operations'
+description:      'a scientifc approach to operations'
 url:               'https://reasonabledeviations.com'
 baseurl:          
 imageurl:       '/assets/images/'
 
 author:
-  name:           'Robert Andrew Martin'
-  email:        'martin.robertandrew@gmail.com'
+  name:           'Dirk Moreno Arias'
+  email:        'dirk@morenolabs.com'
 
 
 # Custom vars
 future: TRUE
-version:          2.1.0
+version:          1.0.0
 
 github:
-  repo:           https://github.com/robertmartin8
+  repo:           https://github.com/MorenoLabs/ScientificService
 
 social:
-    linkedin: https://www.linkedin.com/in/robert-a-martin/
+    linkedin: https://www.linkedin.com/in/dirk-moreno/
     # twitter: https://twitter.com/robertmartin88
 
 # Structure

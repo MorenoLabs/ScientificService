@@ -32,6 +32,34 @@
  * Update the foundational and global aspects of the page.
  */
 
+/* Make headlines smaller on the main page */
+.post h1 {
+  font-size: 1.8rem;
+}
+
+.page h1 {
+  font-size: 1.8rem;
+}
+
+.posts .post-title {
+  font-size: 1.7rem;
+}
+
+/* For index page post titles specifically */
+.posts h1 a {
+  font-size: 1.7rem;
+}
+
+/* Target all post titles with the post-title class */
+.post-title {
+  font-size: 1.7rem;
+}
+
+/* Make subheadings smaller too */
+.post h2, .page h2 {
+  font-size: 1.4rem;
+}
+
 html {
   font-family: "Crimson Text", Times, serif;
   text-align: justify;
@@ -39,12 +67,12 @@ html {
 }
 @media (min-width: 48em) {
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media (min-width: 58em) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -146,16 +174,21 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 48em) {
   .content {
-    max-width: 38rem;
-    margin-left: max(20rem, 35vw);
-    margin-right: 2rem;
+    max-width: 58rem;
+    margin-left: auto;  /* Set to auto for centering */
+    margin-right: auto; /* Set to auto for centering */
+    padding-left: max(18rem, 25vw); /* Use padding instead of margin for the sidebar offset */
+    padding-right: 1rem; /* Small right padding */
   }
 }
+
 @media (min-width: 100em) {
   .content {
-    max-width: max(38rem, min(40vw, 50rem));
-    margin-left: max(35vw, 20rem);
-    margin-right: 2rem;
+    max-width: max(42rem, min(45vw, 55rem));
+    margin-left: auto;  /* Set to auto for centering */
+    margin-right: auto; /* Set to auto for centering */
+    padding-left: max(18rem, 25vw); /* Use padding instead of margin for the sidebar offset */
+    padding-right: 1rem; /* Small right padding */
   }
 }
 
@@ -208,13 +241,32 @@ a.sidebar-nav-item:focus {
 
 /* Purple */
 .theme-base-purpz .sidebar {
-  background-color: #2f0857;
+  background-color: #2a7ae2; /* Minima's primary blue */
 }
-/* pww 2014-12-17 - moved from poole.css to each theme */
+
 .theme-base-purpz .content a,
 .theme-base-purpz h1, h2, h3, h4, h5, h6,
 .theme-base-purpz .related-posts li a:hover {
-  color: #5c14a4;
+  color: #2a7ae2; /* Minima's link/accent color */
+}
+
+/* If you want a lighter sidebar text color */
+.theme-base-purpz .sidebar-about h1,
+.theme-base-purpz .sidebar a {
+  color: #ffffff;
+}
+
+/* If you want to adjust the main content colors */
+.theme-base-purpz .content {
+  background-color: #ffffff;
+  color: #424242; /* Minima's main text color */
+}
+
+/* For code blocks, if needed */
+.theme-base-purpz pre,
+.theme-base-purpz code {
+  background-color: #f8f8f8;
+  border-color: #e8e8e8;
 }
 
 
